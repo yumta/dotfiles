@@ -38,7 +38,7 @@ return {
           modified_hl = "MatchParen",
           directory_hl = "",
           filename_hl = "Bold",
-          modified_sign = "",
+          modified_sign = "+",
           readonly_icon = " 󰌾 ",
         }),
       }
@@ -59,7 +59,30 @@ return {
 
   {
     "folke/snacks.nvim",
+
     opts = {
+      image = {
+        enabled = true, -- Enables the image viewer module
+        -- define these here, so that we don't need to load the image module
+        formats = {
+          "png",
+          "jpg",
+          "jpeg",
+          "gif",
+          "bmp",
+          "webp",
+          "tiff",
+          "heic",
+          "avif",
+          "mp4",
+          "mov",
+          "avi",
+          "mkv",
+          "webm",
+          "pdf",
+          "icns",
+        },
+      },
       dashboard = {
         preset = {
           header = [[
